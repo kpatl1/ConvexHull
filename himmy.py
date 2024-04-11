@@ -71,7 +71,7 @@ if is_3D:
     ax.set_zlabel('Z Axis')
     plt.legend()  
 
-    convex_hull_input_points = reflected_points + point_set + [[0, 0, 0]]
+    convex_hull_input_points = reflected_points + point_set 
     convex_hull = ConvexHull(convex_hull_input_points)
 
     fig = plt.figure()
