@@ -151,7 +151,7 @@ else:
     plt.scatter(np.array(reflected_points)[:, 0], np.array(reflected_points)[:, 1], s=invisible_thickness, color='red', label='Reflected Points')
 
     #K.P: Create the convex hull
-    convex_hull_input_points = reflected_points + point_set + [[0,0]] 
+    convex_hull_input_points = reflected_points + point_set 
     convex_hull = ConvexHull(convex_hull_input_points)
 
     #K.P: Plot the Convex Hull 
