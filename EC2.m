@@ -83,7 +83,7 @@ cvx_end
 tri = DT.ConnectivityList;
 
 %K.P: Plot the shape
-trimesh(tri, xv, yv, Z, 'EdgeColor', 'k');  % 'k' sets the edge color to black
+trimesh(tri, xv, yv, Z);  % 'k' sets the edge color to black
 axis equal;  
 xlabel('X');
 ylabel('Y');
