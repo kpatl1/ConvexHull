@@ -35,6 +35,7 @@ for i = 1:size(boundaryPoints, 1)
         z(pointIndex) = -sin(pi*x);  
     end
 end
+%% 
 
 cvx_begin
     variable Z(length(xv))
@@ -76,6 +77,7 @@ cvx_begin
     minimize(sum(areas))
 cvx_end
 
+%% 
 
 %K.P: Get the triangle verticies
 tri = DT.ConnectivityList;
